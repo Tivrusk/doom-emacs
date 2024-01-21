@@ -48,3 +48,11 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+
+;; Install package directly from a github repository. For this to work, the package
+;; must have an appropriate PACKAGENAME.el file which must contain at least a
+;; Package-Version or Version line in its header.
+(package! yasnippet-radical-snippets
+  :recipe (:host github :repo "Xaldew/yasnippet-radical-snippets"
+           :files (:defaults "snippets" "yasnippet-radical-snippets.el")))
