@@ -44,7 +44,10 @@
 (setq org-directory "~/org/")
 
 (map!   :nvi "C-+" #'text-scale-increase
-        :nvi "C-=" #'doom/reset-font-size)
+        :nvi "C-=" #'doom/reset-font-size
+        :nvi "C-ö" #'previous-buffer
+        :nvi "C-ä" #'next-buffer
+        :nv "SPC r" #'ranger)
 
 (toggle-frame-fullscreen)
 
