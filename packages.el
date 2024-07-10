@@ -56,3 +56,6 @@
 (package! yasnippet-radical-snippets
   :recipe (:host github :repo "Xaldew/yasnippet-radical-snippets"
            :files (:defaults "snippets" "yasnippet-radical-snippets.el")))
+
+(package! whisper
+  :recipe (:host nil :repo "https://github.com/natrys/whisper.el.git"))

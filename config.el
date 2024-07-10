@@ -81,6 +81,21 @@
                  :immediate-finish t)
                ))
 
+
+(setq +zen-text-scale 1)
+
+(after! writeroom-mode
+  (setq writeroom-width 40))
+
+(after! whisper
+  (setq whisper-model "large-v2"
+        whisper-language "de"
+        whisper-translate nil)
+  (setq whisper--ffmpeg-input-device ":1"
+	whisper-use-threads 8
+	whisper-enable-speed-up t
+	whisper-recording-timeout 3600))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
