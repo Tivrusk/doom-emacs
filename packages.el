@@ -59,3 +59,7 @@
 
 (package! whisper
   :recipe (:host nil :repo "https://github.com/natrys/whisper.el.git"))
+
+(package! gruber-darker-theme)
+
+(package! green-is-the-new-black-theme)

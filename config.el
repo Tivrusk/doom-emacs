@@ -23,7 +23,7 @@
 ;;
 ;; (setq doom-font (font-spec :family "Fira Code" :size 27 :weight 'semi-light)
 ;;     doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
-(setq doom-font (font-spec :family "Iosevka" :weight 'light :size 18))
+(setq doom-font (font-spec :family "Iosevka" :weight 'regular :size 18))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -95,6 +95,8 @@
 	whisper-use-threads 8
 	whisper-enable-speed-up t
 	whisper-recording-timeout 3600))
+
+(setq evil-want-fine-undo t)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
