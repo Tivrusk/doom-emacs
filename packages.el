@@ -60,6 +60,8 @@
 (package! whisper
   :recipe (:host nil :repo "https://github.com/natrys/whisper.el.git"))
 
-(package! gruber-darker-theme)
+;; (add-to-list 'custom-theme-load-path
+;;              "/Users/tristangrosskopf/.emacs-themes/")
 
 (package! green-is-the-new-black-theme)
+(package! gruber-darker-theme)
